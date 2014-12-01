@@ -278,10 +278,18 @@ static CCFileUtils *fileUtils = nil;
 	{
 		[_searchResolutionsOrder addObject:CCFileUtilsSuffixMacHD];
 		[_searchResolutionsOrder addObject:CCFileUtilsSuffixMac];
+        [_searchResolutionsOrder addObject:CCFileUtilsSuffixiPhone5HD];
+        [_searchResolutionsOrder addObject:CCFileUtilsSuffixiPhoneHD];
+        [_searchResolutionsOrder addObject:CCFileUtilsSuffixiPhone5];
+        [_searchResolutionsOrder addObject:CCFileUtilsSuffixiPhone];
 	}
 	else if (device == CCDeviceMac)
 	{
 		[_searchResolutionsOrder addObject:CCFileUtilsSuffixMac];
+        [_searchResolutionsOrder addObject:CCFileUtilsSuffixiPhone5HD];
+        [_searchResolutionsOrder addObject:CCFileUtilsSuffixiPhoneHD];
+        [_searchResolutionsOrder addObject:CCFileUtilsSuffixiPhone5];
+        [_searchResolutionsOrder addObject:CCFileUtilsSuffixiPhone];
 	}
 #endif
 	

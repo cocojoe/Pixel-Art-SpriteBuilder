@@ -96,7 +96,7 @@
 								<array>
 									<real>1</real>
 									<real>1</real>
-									<false/>
+									<true/>
 									<integer>0</integer>
 								</array>
 							</dict>
@@ -150,8 +150,8 @@
 						<string>Size</string>
 						<key>value</key>
 						<array>
-							<real>568</real>
-							<real>384</real>
+							<real>400</real>
+							<real>240</real>
 							<integer>0</integer>
 							<integer>0</integer>
 						</array>

@@ -22,7 +22,14 @@
     
     // Load TMX
     _tileMap = [CCTiledMap tiledMapWithFile:@"tilemap.tmx"];
-    [_effectNode addChild:_tileMap];
+    [_effectNode addChild:_tileMap z:-5];
+    
+    // Quick Texture Alias Testing
+    CCTexture* animationTex = [CCTexture textureWithFile:@"animation.png"];
+    [animationTex setAntialiased:NO];
+    
+    // Doesn't seem to work however scrolling does feel smoother in Simulator
+    [[_effectNode texture] setAntialiased:YES];
     
     // Input
     self.userInteractionEnabled = YES;

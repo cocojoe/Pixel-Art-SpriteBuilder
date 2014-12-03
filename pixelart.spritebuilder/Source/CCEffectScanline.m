@@ -34,9 +34,10 @@
     self.fragmentFunctions = [[NSMutableArray alloc] init];
     
     CCEffectFunctionInput *input = [[CCEffectFunctionInput alloc] initWithType:@"vec4" name:@"inputValue" initialSnippet:CCEffectDefaultInitialInputSnippet snippet:CCEffectDefaultInputSnippet];
-    
+
+    // Try using a texture, doesn't work well depending on scale
     NSString* effectBody = CC_GLSL(
-                                   float odd = floor(mod(gl_FragCoord.y, 2.0));
+                                   float odd = floor(mod(gl_FragCoord.y, 2.0)) + 0.5;
                                    return vec4(inputValue.rgba*odd);
                                    );
     

@@ -8,7 +8,7 @@
 - (void)didLoadFromCCB {
     
     // Design Resolution
-    CGSize designSize = CGSizeMake(400.0, 240.0);
+    CGSize designSize = _effectNode.contentSizeInPoints;
     
     // Device Resolution
     CGSize deviceSize = [CCDirector sharedDirector].viewSize;
@@ -19,8 +19,26 @@
     [_effectNode setScaleX:scale];
     [_effectNode setScaleY:scale];
     
-    [_effectNode setEffect:[[CCEffectScanline alloc] init]];
-    [[_effectNode texture] setAntialiased:NO];
+    // Input
+    self.userInteractionEnabled = YES;
+    
+    //[_effectNode setEffect:[[CCEffectScanline alloc] init]];
+}
+
+#if __CC_PLATFORM_MAC
+- (void)mouseDown:(NSEvent *)theEvent {
+    CGPoint pos = [theEvent locationInNode:_effectNode]; // Relative to Design
+    [self touchAction:pos];
+}
+#elif __CC_PLATFORM_IOS || __CC_PLATFORM_ANDROID
+- (void)touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event {
+    CGPoint pos = [touch locationInNode:_effectNode]; // Relative to Design
+    [self touchAction:pos];
+}
+#endif
+
+- (void)touchAction:(CGPoint) pos {
+    CCLOG(@"Touch: %f,%f",pos.x,pos.y);
 }
 
 @end

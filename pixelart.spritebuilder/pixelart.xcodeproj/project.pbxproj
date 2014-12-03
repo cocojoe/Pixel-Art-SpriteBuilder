@@ -12,6 +12,12 @@
 		5B12102A197484DD004C1E1D /* pixelartActivity.java in Sources */ = {isa = PBXBuildFile; fileRef = 5B12101B19748413004C1E1D /* pixelartActivity.java */; };
 		5B121030197484FA004C1E1D /* pixelartActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B12102F197484FA004C1E1D /* pixelartActivity.m */; };
 		5B121038197487F2004C1E1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B737893E1807617C0076A88C /* AppDelegate.m */; };
+		5BA47F431A2F6A3A005EF9C5 /* tilemap.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 5BA47F411A2F6A3A005EF9C5 /* tilemap.tmx */; };
+		5BA47F441A2F6A3A005EF9C5 /* tilemap.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 5BA47F411A2F6A3A005EF9C5 /* tilemap.tmx */; };
+		5BA47F451A2F6A3A005EF9C5 /* tilemap.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 5BA47F411A2F6A3A005EF9C5 /* tilemap.tmx */; };
+		5BA47F461A2F6A3A005EF9C5 /* tileset-4-new.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BA47F421A2F6A3A005EF9C5 /* tileset-4-new.png */; };
+		5BA47F471A2F6A3A005EF9C5 /* tileset-4-new.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BA47F421A2F6A3A005EF9C5 /* tileset-4-new.png */; };
+		5BA47F481A2F6A3A005EF9C5 /* tileset-4-new.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BA47F421A2F6A3A005EF9C5 /* tileset-4-new.png */; };
 		5BA4F5BB1A2CB67A00C832D7 /* GameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA4F5BA1A2CB67A00C832D7 /* GameManager.m */; };
 		5BA4F5BC1A2CB67A00C832D7 /* GameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA4F5BA1A2CB67A00C832D7 /* GameManager.m */; };
 		5BA4F5BD1A2CB67A00C832D7 /* GameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA4F5BA1A2CB67A00C832D7 /* GameManager.m */; };
@@ -187,6 +193,8 @@
 		5B121033197485FE004C1E1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Platforms/Android/Info.plist; sourceTree = "<group>"; };
 		5B121034197485FE004C1E1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Platforms/iOS/Info.plist; sourceTree = "<group>"; };
 		5BA4619E1974C88900785744 /* AndroidManifest.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = AndroidManifest.xml; path = Platforms/Android/AndroidManifest.xml; sourceTree = "<group>"; };
+		5BA47F411A2F6A3A005EF9C5 /* tilemap.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = tilemap.tmx; sourceTree = "<group>"; };
+		5BA47F421A2F6A3A005EF9C5 /* tileset-4-new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tileset-4-new.png"; sourceTree = "<group>"; };
 		5BA4F5B91A2CB67A00C832D7 /* GameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameManager.h; path = Source/GameManager.h; sourceTree = "<group>"; };
 		5BA4F5BA1A2CB67A00C832D7 /* GameManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameManager.m; path = Source/GameManager.m; sourceTree = "<group>"; };
 		5BA4F5BF1A2CB6A500C832D7 /* CCEffectScanline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCEffectScanline.h; path = Source/CCEffectScanline.h; sourceTree = "<group>"; };
@@ -344,6 +352,15 @@
 				5B121015197483EE004C1E1D /* ic_launcher.png */,
 			);
 			path = "drawable-xxhdpi";
+			sourceTree = "<group>";
+		};
+		5BA47F401A2F6A3A005EF9C5 /* tilemap */ = {
+			isa = PBXGroup;
+			children = (
+				5BA47F411A2F6A3A005EF9C5 /* tilemap.tmx */,
+				5BA47F421A2F6A3A005EF9C5 /* tileset-4-new.png */,
+			);
+			path = tilemap;
 			sourceTree = "<group>";
 		};
 		5BA4F5C41A2CC20500C832D7 /* Effects */ = {
@@ -557,6 +574,7 @@
 		B77F1B4617B978D7009739AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5BA47F401A2F6A3A005EF9C5 /* tilemap */,
 				7A40366119DDF8C2007B6E8F /* Platforms */,
 				5B12100D197483EE004C1E1D /* res */,
 				B73789911807667A0076A88C /* Icons */,
@@ -741,6 +759,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BA47F481A2F6A3A005EF9C5 /* tileset-4-new.png in Resources */,
+				5BA47F451A2F6A3A005EF9C5 /* tilemap.tmx in Resources */,
 				7A4036F719DE401F007B6E8F /* iPad-old.png in Resources */,
 				7A4036F819DE401F007B6E8F /* iPad-old@2x.png in Resources */,
 				7A4036F919DE401F007B6E8F /* iPad.png in Resources */,
@@ -766,6 +786,7 @@
 			files = (
 				927F61AD196C771E000F43EF /* Settings.png in Resources */,
 				927F61AE196C771E000F43EF /* Default@2x.png in Resources */,
+				5BA47F471A2F6A3A005EF9C5 /* tileset-4-new.png in Resources */,
 				927F61AF196C771E000F43EF /* iPad@2x.png in Resources */,
 				927F61B0196C771E000F43EF /* iPad.png in Resources */,
 				927F61B1196C771E000F43EF /* iPad-old@2x.png in Resources */,
@@ -778,6 +799,7 @@
 				927F61B8196C771E000F43EF /* Default-568h@2x.png in Resources */,
 				927F61B9196C771E000F43EF /* iPhone@2x.png in Resources */,
 				927F61BA196C771E000F43EF /* Default.png in Resources */,
+				5BA47F441A2F6A3A005EF9C5 /* tilemap.tmx in Resources */,
 				927F61BB196C771E000F43EF /* iPad-old.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -788,6 +810,7 @@
 			files = (
 				B71F5919188484E7003F4D28 /* Settings.png in Resources */,
 				B7378978180762440076A88C /* Default@2x.png in Resources */,
+				5BA47F461A2F6A3A005EF9C5 /* tileset-4-new.png in Resources */,
 				B71F5914188484E7003F4D28 /* iPad@2x.png in Resources */,
 				B71F5913188484E7003F4D28 /* iPad.png in Resources */,
 				B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */,
@@ -800,6 +823,7 @@
 				B7378975180762440076A88C /* Default-568h@2x.png in Resources */,
 				B71F5918188484E7003F4D28 /* iPhone@2x.png in Resources */,
 				B7378977180762440076A88C /* Default.png in Resources */,
+				5BA47F431A2F6A3A005EF9C5 /* tilemap.tmx in Resources */,
 				B71F5911188484E7003F4D28 /* iPad-old.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -107,6 +107,8 @@
 		577D72D11970AC59005ABDC0 /* CCPlatformTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 571CD01F19649E03003D460C /* CCPlatformTextField.m */; };
 		57BFF2B61991931300A3FE9C /* CCEditText.java in Sources */ = {isa = PBXBuildFile; fileRef = 57BFF2B51991931300A3FE9C /* CCEditText.java */; };
 		57BFF2BA1991937C00A3FE9C /* CCEditText.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BFF2B81991937C00A3FE9C /* CCEditText.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5BA47F361A2F5307005EF9C5 /* NSEvent+CC.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BA47F341A2F5307005EF9C5 /* NSEvent+CC.h */; };
+		5BA47F371A2F5307005EF9C5 /* NSEvent+CC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA47F351A2F5307005EF9C5 /* NSEvent+CC.m */; };
 		5BC3CB5919626FA000C4F0D0 /* CCGestureListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BC3CB5719626FA000C4F0D0 /* CCGestureListener.h */; };
 		5BC3CB5A19626FA000C4F0D0 /* CCGestureListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC3CB5819626FA000C4F0D0 /* CCGestureListener.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5BC3CB5C1962795500C4F0D0 /* CCGestureListener.java in Sources */ = {isa = PBXBuildFile; fileRef = 5BC3CB5219626E4F00C4F0D0 /* CCGestureListener.java */; };
@@ -1235,6 +1237,8 @@
 		57BFF2B51991931300A3FE9C /* CCEditText.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; name = CCEditText.java; path = java/org/cocos2d/CCEditText.java; sourceTree = "<group>"; };
 		57BFF2B71991937C00A3FE9C /* CCEditText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCEditText.h; path = java/CCEditText.h; sourceTree = "<group>"; };
 		57BFF2B81991937C00A3FE9C /* CCEditText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCEditText.m; path = java/CCEditText.m; sourceTree = "<group>"; };
+		5BA47F341A2F5307005EF9C5 /* NSEvent+CC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSEvent+CC.h"; sourceTree = "<group>"; };
+		5BA47F351A2F5307005EF9C5 /* NSEvent+CC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSEvent+CC.m"; sourceTree = "<group>"; };
 		5BC3CB5219626E4F00C4F0D0 /* CCGestureListener.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = CCGestureListener.java; sourceTree = "<group>"; };
 		5BC3CB5719626FA000C4F0D0 /* CCGestureListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCGestureListener.h; path = Android/CCGestureListener.h; sourceTree = "<group>"; };
 		5BC3CB5819626FA000C4F0D0 /* CCGestureListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCGestureListener.m; path = Android/CCGestureListener.m; sourceTree = "<group>"; };
@@ -2281,6 +2285,8 @@
 		E0E9749E1237E4EA00E3E64B /* Mac */ = {
 			isa = PBXGroup;
 			children = (
+				5BA47F341A2F5307005EF9C5 /* NSEvent+CC.h */,
+				5BA47F351A2F5307005EF9C5 /* NSEvent+CC.m */,
 				A046E28B14C1DB7D0005BBF2 /* CCDirectorMac.h */,
 				A046E28C14C1DB7D0005BBF2 /* CCDirectorMac.m */,
 				A046E28F14C1DB7D0005BBF2 /* CCGLView.h */,
@@ -2672,6 +2678,7 @@
 				7A59473F19E3730B00F65F90 /* CCTouchIOS.h in Headers */,
 				7A59474119E3730B00F65F90 /* CCMetalSupport_Private.h in Headers */,
 				7A59474319E3730C00F65F90 /* CCDirectorMac.h in Headers */,
+				5BA47F361A2F5307005EF9C5 /* NSEvent+CC.h in Headers */,
 				7A59474519E3730C00F65F90 /* CCGLView.h in Headers */,
 				7A59474719E3730D00F65F90 /* CCWindow.h in Headers */,
 				7A59474919E3730D00F65F90 /* CCGL.h in Headers */,
@@ -3370,6 +3377,7 @@
 				7A59487619E375B000F65F90 /* CCActivity.m in Sources */,
 				7A59487A19E375B100F65F90 /* CCDirectorAndroid.m in Sources */,
 				7A59487E19E375B100F65F90 /* CCGestureListener.m in Sources */,
+				5BA47F371A2F5307005EF9C5 /* NSEvent+CC.m in Sources */,
 				7A59488119E375B200F65F90 /* CCMetalView.m in Sources */,
 				7A59488319E375B200F65F90 /* UITouch+CC.m in Sources */,
 				7A59488519E375B200F65F90 /* CCDirectorIOS.m in Sources */,

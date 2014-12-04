@@ -1,11 +1,36 @@
 #import "MainScene.h"
 #import "CCEffectScanline.h"
 
+typedef NS_ENUM(NSUInteger, CCRetroScale) {
+    CCRetroScaleFitWidth,
+    CCRetroScaleFitHeight,
+    CCRetroScaleFitScreen,
+    CCRetroScaleFillScreen
+};
+
 @implementation MainScene {
     CCEffectNode* _effectNode;
 }
 
 - (void)didLoadFromCCB {
+    
+    // Scale To Fit Width
+    [self setRetroScale:CCRetroScaleFitWidth];
+
+    // Disable Anti-Alias Character Sprite Sheet, Be nice to set this on a sheet basis in SB
+    CCTexture* animationTex = [CCTexture textureWithFile:@"animation.png"];
+    [animationTex setAntialiased:NO];
+    
+    // Smoother
+    [[_effectNode texture] setAntialiased:YES];
+    
+    // Input
+    self.userInteractionEnabled = YES;
+    
+    //[_effectNode setEffect:[[CCEffectScanline alloc] init]];
+}
+
+- (void) setRetroScale:(CCRetroScale) retroScale {
     
     // Design Resolution
     CGSize designSize = _effectNode.contentSizeInPoints;
@@ -13,23 +38,29 @@
     // Device Resolution
     CGSize deviceSize = [CCDirector sharedDirector].viewSize;
     
-    // Auto Scale
-    float scale  = deviceSize.width/designSize.width;
-
+    float scale = 1.0;
+    
+    switch (retroScale) {
+        case CCRetroScaleFitWidth:
+            scale  = deviceSize.width/designSize.width;
+            break;
+        case CCRetroScaleFitHeight:
+            scale  = deviceSize.height/designSize.height;
+            break;
+        case CCRetroScaleFitScreen:
+            scale  = MIN(deviceSize.width/designSize.width,deviceSize.height/designSize.height);
+            break;
+        case CCRetroScaleFillScreen:
+            scale  = MAX(deviceSize.width/designSize.width,deviceSize.height/designSize.height);
+            break;
+        default:
+            break;
+    }
+    
+    // Scale Node
     [_effectNode setScaleX:scale];
     [_effectNode setScaleY:scale];
     
-    // Disable Anti-Alias Character Sprite Sheet
-    CCTexture* animationTex = [CCTexture textureWithFile:@"animation.png"];
-    [animationTex setAntialiased:NO];
-    
-    // Smooth scrolling
-    [[_effectNode texture] setAntialiased:YES];
-    
-    // Input
-    self.userInteractionEnabled = YES;
-    
-    //[_effectNode setEffect:[[CCEffectScanline alloc] init]];
 }
 
 #if __CC_PLATFORM_MAC

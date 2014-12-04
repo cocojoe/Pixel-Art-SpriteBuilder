@@ -24,6 +24,9 @@
 		5BA4F5C11A2CB6A500C832D7 /* CCEffectScanline.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA4F5C01A2CB6A500C832D7 /* CCEffectScanline.m */; };
 		5BA4F5C21A2CB6A500C832D7 /* CCEffectScanline.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA4F5C01A2CB6A500C832D7 /* CCEffectScanline.m */; };
 		5BA4F5C31A2CB6A500C832D7 /* CCEffectScanline.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA4F5C01A2CB6A500C832D7 /* CCEffectScanline.m */; };
+		5BEACD2F1A30898D0072623B /* GameLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BEACD2E1A30898D0072623B /* GameLayer.m */; };
+		5BEACD301A30898D0072623B /* GameLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BEACD2E1A30898D0072623B /* GameLayer.m */; };
+		5BEACD311A30898D0072623B /* GameLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BEACD2E1A30898D0072623B /* GameLayer.m */; };
 		7A046D8C19E8A20E004C4763 /* MainScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B7378993180767190076A88C /* MainScene.m */; };
 		7A40360419DDEE84007B6E8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A40360319DDEE84007B6E8F /* main.m */; };
 		7A4036E819DE3F33007B6E8F /* MainScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B7378993180767190076A88C /* MainScene.m */; };
@@ -199,6 +202,8 @@
 		5BA4F5BA1A2CB67A00C832D7 /* GameManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameManager.m; path = Source/GameManager.m; sourceTree = "<group>"; };
 		5BA4F5BF1A2CB6A500C832D7 /* CCEffectScanline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCEffectScanline.h; path = Source/CCEffectScanline.h; sourceTree = "<group>"; };
 		5BA4F5C01A2CB6A500C832D7 /* CCEffectScanline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCEffectScanline.m; path = Source/CCEffectScanline.m; sourceTree = "<group>"; };
+		5BEACD2D1A30898D0072623B /* GameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLayer.h; sourceTree = "<group>"; };
+		5BEACD2E1A30898D0072623B /* GameLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameLayer.m; sourceTree = "<group>"; };
 		7A4035FF19DDEE84007B6E8F /* pixelart Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pixelart Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A40360219DDEE84007B6E8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Platforms/Mac/Info.plist; sourceTree = "<group>"; };
 		7A40360319DDEE84007B6E8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Source/Platforms/Mac/main.m; sourceTree = "<group>"; };
@@ -496,6 +501,8 @@
 				7A40362019DDEF0D007B6E8F /* Platforms */,
 				B7378992180767190076A88C /* MainScene.h */,
 				B7378993180767190076A88C /* MainScene.m */,
+				5BEACD2D1A30898D0072623B /* GameLayer.h */,
+				5BEACD2E1A30898D0072623B /* GameLayer.m */,
 				5BA4F5B91A2CB67A00C832D7 /* GameManager.h */,
 				5BA4F5BA1A2CB67A00C832D7 /* GameManager.m */,
 				5BA4F5C41A2CC20500C832D7 /* Effects */,
@@ -889,6 +896,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A4036E819DE3F33007B6E8F /* MainScene.m in Sources */,
+				5BEACD311A30898D0072623B /* GameLayer.m in Sources */,
 				5BA4F5BD1A2CB67A00C832D7 /* GameManager.m in Sources */,
 				7A40360419DDEE84007B6E8F /* main.m in Sources */,
 				7A59498E19E3941300F65F90 /* AppDelegate.m in Sources */,
@@ -904,6 +912,7 @@
 				5BA4F5C21A2CB6A500C832D7 /* CCEffectScanline.m in Sources */,
 				5BA4F5BC1A2CB67A00C832D7 /* GameManager.m in Sources */,
 				5B121030197484FA004C1E1D /* pixelartActivity.m in Sources */,
+				5BEACD301A30898D0072623B /* GameLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -912,6 +921,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B73789871807631A0076A88C /* main.m in Sources */,
+				5BEACD2F1A30898D0072623B /* GameLayer.m in Sources */,
 				5BA4F5BB1A2CB67A00C832D7 /* GameManager.m in Sources */,
 				7A046D8C19E8A20E004C4763 /* MainScene.m in Sources */,
 				5B121038197487F2004C1E1D /* AppDelegate.m in Sources */,
@@ -1042,8 +1052,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PREFIX_HEADER = Source/Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
+					DEBUG,
+					"COCOS2D_DEBUG=1",
 				);
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;

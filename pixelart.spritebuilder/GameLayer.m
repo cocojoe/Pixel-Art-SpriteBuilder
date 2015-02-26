@@ -10,9 +10,12 @@
 
 @implementation GameLayer {
     CCTiledMap* _tileMap;
+    CCPhysicsNode* _physicsNode;
 }
 
 - (void)didLoadFromCCB {
+    
+    _physicsNode.debugDraw = YES;
     
     // Load TMX
     _tileMap = [CCTiledMap tiledMapWithFile:@"tilemap.tmx"];
